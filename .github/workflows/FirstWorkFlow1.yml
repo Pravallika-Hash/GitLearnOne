@@ -1,5 +1,8 @@
 name: My First workflow
 
+run-name: ${{ github.actor }} is learning Github Actions
+
+
 on: push
 
 jobs:
