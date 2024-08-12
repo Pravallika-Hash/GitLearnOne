@@ -2,8 +2,8 @@ name: Trigger Workflow
 
 on: push
 
- jobs:
- echo-print: 
-   runs-on: ubuntu-latest
-   steps:
-    - run: echo "Running for Trigger"
+jobs:
+   echo-print: 
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "Running for Trigger workflow"
