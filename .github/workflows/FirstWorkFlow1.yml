@@ -3,7 +3,9 @@ name: My First workflow
 run-name: ${{ github.actor }} is learning Github Actions
 
 
-on: push
+on: 
+ push:
+ workflow_dispatch:
 
 jobs:
  echo-print:
