@@ -1,15 +1,13 @@
-name: Actions Workflow
-
+name: Using Actions
 
 on:
-push
-
+ push
 jobs:
- echo_javasetup:
+  echo_build:
    runs-on: ubuntu-latest
    steps:
      - uses: actions/checkout@v4
      - uses: actions/setup-java@v4
        with:
-         distribution: 'temurin' # See 'Supported distributions' for available options
-         java-version: '17'
+        java-version: '17'
+        distribution: 'temurin'
